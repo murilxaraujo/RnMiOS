@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B5295322561ADA800AC0D23 /* Contract in Resources */ = {isa = PBXBuildFile; fileRef = 4B52952D2561ADA800AC0D23 /* Contract */; };
+		4B5295332561ADA800AC0D23 /* Presenter in Resources */ = {isa = PBXBuildFile; fileRef = 4B52952E2561ADA800AC0D23 /* Presenter */; };
+		4B5295342561ADA800AC0D23 /* View in Resources */ = {isa = PBXBuildFile; fileRef = 4B52952F2561ADA800AC0D23 /* View */; };
+		4B5295352561ADA800AC0D23 /* Interactor in Resources */ = {isa = PBXBuildFile; fileRef = 4B5295302561ADA800AC0D23 /* Interactor */; };
+		4B5295362561ADA800AC0D23 /* Router in Resources */ = {isa = PBXBuildFile; fileRef = 4B5295312561ADA800AC0D23 /* Router */; };
+		4B5295412561AEA600AC0D23 /* Contract in Resources */ = {isa = PBXBuildFile; fileRef = 4B52953C2561AEA600AC0D23 /* Contract */; };
+		4B5295422561AEA600AC0D23 /* Presenter in Resources */ = {isa = PBXBuildFile; fileRef = 4B52953D2561AEA600AC0D23 /* Presenter */; };
+		4B5295432561AEA600AC0D23 /* View in Resources */ = {isa = PBXBuildFile; fileRef = 4B52953E2561AEA600AC0D23 /* View */; };
+		4B5295442561AEA600AC0D23 /* Interactor in Resources */ = {isa = PBXBuildFile; fileRef = 4B52953F2561AEA600AC0D23 /* Interactor */; };
+		4B5295452561AEA600AC0D23 /* Router in Resources */ = {isa = PBXBuildFile; fileRef = 4B5295402561AEA600AC0D23 /* Router */; };
 		4B78ECC5255CA9AE00DC6F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78ECC4255CA9AE00DC6F49 /* AppDelegate.swift */; };
 		4B78ECC7255CA9AE00DC6F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78ECC6255CA9AE00DC6F49 /* SceneDelegate.swift */; };
 		4B78ECC9255CA9AE00DC6F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78ECC8255CA9AE00DC6F49 /* ViewController.swift */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B52952D2561ADA800AC0D23 /* Contract */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Contract; sourceTree = "<group>"; };
+		4B52952E2561ADA800AC0D23 /* Presenter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presenter; sourceTree = "<group>"; };
+		4B52952F2561ADA800AC0D23 /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
+		4B5295302561ADA800AC0D23 /* Interactor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Interactor; sourceTree = "<group>"; };
+		4B5295312561ADA800AC0D23 /* Router */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Router; sourceTree = "<group>"; };
+		4B52953C2561AEA600AC0D23 /* Contract */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Contract; sourceTree = "<group>"; };
+		4B52953D2561AEA600AC0D23 /* Presenter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presenter; sourceTree = "<group>"; };
+		4B52953E2561AEA600AC0D23 /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
+		4B52953F2561AEA600AC0D23 /* Interactor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Interactor; sourceTree = "<group>"; };
+		4B5295402561AEA600AC0D23 /* Router */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Router; sourceTree = "<group>"; };
 		4B78ECC1255CA9AE00DC6F49 /* RnM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RnM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B78ECC4255CA9AE00DC6F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B78ECC6255CA9AE00DC6F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,25 +94,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B1C255F2560C6870024FB7B /* Model */ = {
+		4B52952C2561AD7D00AC0D23 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4B52953B2561AE8300AC0D23 /* CharacterModule */,
+				4B52953A2561ADD000AC0D23 /* CharactersModule */,
 			);
-			path = Model;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		4B1C25602560C6A60024FB7B /* View */ = {
+		4B52953A2561ADD000AC0D23 /* CharactersModule */ = {
 			isa = PBXGroup;
 			children = (
+				4B52952D2561ADA800AC0D23 /* Contract */,
+				4B52952E2561ADA800AC0D23 /* Presenter */,
+				4B52952F2561ADA800AC0D23 /* View */,
+				4B5295302561ADA800AC0D23 /* Interactor */,
+				4B5295312561ADA800AC0D23 /* Router */,
 			);
-			path = View;
+			path = CharactersModule;
 			sourceTree = "<group>";
 		};
-		4B1C25612560C6AE0024FB7B /* Controller */ = {
+		4B52953B2561AE8300AC0D23 /* CharacterModule */ = {
 			isa = PBXGroup;
 			children = (
+				4B52953C2561AEA600AC0D23 /* Contract */,
+				4B52953D2561AEA600AC0D23 /* Presenter */,
+				4B52953E2561AEA600AC0D23 /* View */,
+				4B52953F2561AEA600AC0D23 /* Interactor */,
+				4B5295402561AEA600AC0D23 /* Router */,
 			);
-			path = Controller;
+			path = CharacterModule;
 			sourceTree = "<group>";
 		};
 		4B78ECB8255CA9AE00DC6F49 = {
@@ -118,9 +150,7 @@
 		4B78ECC3255CA9AE00DC6F49 /* RnM */ = {
 			isa = PBXGroup;
 			children = (
-				4B1C25612560C6AE0024FB7B /* Controller */,
-				4B1C25602560C6A60024FB7B /* View */,
-				4B1C255F2560C6870024FB7B /* Model */,
+				4B52952C2561AD7D00AC0D23 /* Modules */,
 				4B78ECC4255CA9AE00DC6F49 /* AppDelegate.swift */,
 				4B78ECC6255CA9AE00DC6F49 /* SceneDelegate.swift */,
 				4B78ECC8255CA9AE00DC6F49 /* ViewController.swift */,
@@ -252,8 +282,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5295362561ADA800AC0D23 /* Router in Resources */,
 				4B78ECD1255CA9AF00DC6F49 /* LaunchScreen.storyboard in Resources */,
+				4B5295332561ADA800AC0D23 /* Presenter in Resources */,
+				4B5295432561AEA600AC0D23 /* View in Resources */,
+				4B5295422561AEA600AC0D23 /* Presenter in Resources */,
 				4B78ECCE255CA9AF00DC6F49 /* Assets.xcassets in Resources */,
+				4B5295342561ADA800AC0D23 /* View in Resources */,
+				4B5295452561AEA600AC0D23 /* Router in Resources */,
+				4B5295442561AEA600AC0D23 /* Interactor in Resources */,
+				4B5295322561ADA800AC0D23 /* Contract in Resources */,
+				4B5295412561AEA600AC0D23 /* Contract in Resources */,
+				4B5295352561ADA800AC0D23 /* Interactor in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
