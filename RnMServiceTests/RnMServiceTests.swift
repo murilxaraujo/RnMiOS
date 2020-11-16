@@ -18,16 +18,37 @@ class RnMServiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_getAllCharacters_defaultPage() throws {
+        let exp = expectation(description: "Returns Characters successfully")
+        
+        RnMService.character.getAll { (result) in
+            switch result {
+                case .success(_):
+                    exp.fulfill()
+                    break;
+                case .failure(let error):
+                    XCTAssert(false, error.localizedDescription)
+                    break
+            }
         }
+        
+        wait(for: [exp], timeout: 10.0)
     }
 
+    func test_getAllCharacters_definedPage() throws {
+        let exp = expectation(description: "Returns Characters successfully")
+        
+        RnMService.character.getAll(in: 2) { (result) in
+            switch result {
+                case .success(_):
+                    exp.fulfill()
+                    break;
+                case .failure(let error):
+                    XCTAssert(false, error.localizedDescription)
+                    break
+            }
+        }
+        
+        wait(for: [exp], timeout: 10.0)
+    }
 }
