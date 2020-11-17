@@ -84,3 +84,14 @@ extension CharactersViewController: UITableViewDataSource {
         }
     }
 }
+
+extension CharactersViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+        
+        if position > charactersView.tableView.contentSize.height-100-scrollView.frame.size.height && !isWaitingForData {
+            isWaitingForData = true
+            output.loadNextPage()
+        }
+    }
+}

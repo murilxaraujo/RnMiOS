@@ -35,6 +35,5 @@ class CharacterPresenter: CharacterModuleInput, CharacterViewOutput, CharacterIn
             FavoritesService.shared.favCharacter(for: id)
             view.setFavButton(to: true)
         }
-        FavoritesService.shared.saveFavoritedCharacters()
     }
 }

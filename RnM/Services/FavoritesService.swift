@@ -28,6 +28,7 @@ public class FavoritesService {
     
     public func favCharacter(for id: Int) {
         favoriteCharacters.insert(id)
+        saveFavoritedCharacters()
     }
     
     public func hasFavCharacter(for id: Int) -> Bool {
@@ -36,6 +37,7 @@ public class FavoritesService {
     
     public func removeFav(for id: Int) {
         favoriteCharacters.remove(id)
+        saveFavoritedCharacters()
     }
     
     public func saveFavoritedCharacters() {
