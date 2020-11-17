@@ -15,4 +15,6 @@ protocol CharacterViewInput: class {
     */
 
     func setupInitialState(with character: RnMCharacter)
+    
+    func populateTableView(with sections: [CharacterSection])
 }

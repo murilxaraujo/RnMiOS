@@ -17,11 +17,13 @@ class CharacterPresenter: CharacterModuleInput, CharacterViewOutput, CharacterIn
     func viewIsReady() {
         if let character = character {
             view.setupInitialState(with: character)
+            interactor.getSections(from: character)
         }
+        
     }
     
     func setView(sections: [CharacterSection]) {
-        
+        view.populateTableView(with: sections)
     }
     
     func hasMarkedCharacterAsFavorite() {

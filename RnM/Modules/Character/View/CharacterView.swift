@@ -12,10 +12,12 @@ class CharacterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        autoresizingMask = [.flexibleWidth, .flexibleHeight]
         backgroundColor = .systemBackground
         tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         tableView.frame = frame
         tableView.allowsSelection = false
+        addSubview(tableView)
     }
     
     required init?(coder: NSCoder) {

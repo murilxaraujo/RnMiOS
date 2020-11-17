@@ -18,14 +18,22 @@ class CharacterViewController: UIViewController, CharacterViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = characterView
+        characterView.tableView.dataSource = self
+        characterView.tableView.register(CharacterBasicInfoTableViewCell.self, forCellReuseIdentifier: CharacterBasicInfoTableViewCell.cellID)
+        characterView.tableView.register(CharacterDetailsTableViewCell.self, forCellReuseIdentifier: CharacterDetailsTableViewCell.cellID)
         output.viewIsReady()
     }
-
 
     // MARK: CharacterViewInput
     func setupInitialState(with character: RnMCharacter) {
         title = character.name
         self.character = character
+        characterView.tableView.reloadData()
+    }
+    
+    func populateTableView(with sections: [CharacterSection]) {
+        self.sections = sections
+        characterView.tableView.reloadData()
     }
 }
 
@@ -39,6 +47,21 @@ extension CharacterViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        switch indexPath.section {
+            case 0:
+                let cell = tableView.dequeueReusableCell(withIdentifier: CharacterBasicInfoTableViewCell.cellID) as! CharacterBasicInfoTableViewCell
+                if let character = character {
+                    cell.populateCell(with: character)
+                }
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCell(withIdentifier: CharacterDetailsTableViewCell.cellID) as! CharacterDetailsTableViewCell
+                let info = sections[indexPath.section].items[indexPath.item]
+                cell.textLabel?.text = info.key
+                cell.detailTextLabel?.text = info.value
+                return cell
+            default:
+                fatalError("Section does not exist")
+        }
     }
 }

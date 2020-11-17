@@ -21,6 +21,7 @@ class CharacterInteractor: CharacterInteractorInput {
         sections.append(characterBasicInfo)
         
         let characterDetails = CharacterSection(items: [
+            CharacterItem(key: "Status", value: character.status),
             CharacterItem(key: "Species", value: character.species),
             CharacterItem(key: "Type", value: character.type != "" ? character.type : "Unknown"),
             CharacterItem(key: "Gender", value: character.gender),
