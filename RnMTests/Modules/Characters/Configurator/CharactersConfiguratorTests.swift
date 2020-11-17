@@ -25,10 +25,6 @@ class CharactersModuleConfiguratorTests: XCTestCase {
 
         //given
         let viewController = CharactersViewControllerMock()
-        let configurator = CharactersModuleConfigurator()
-
-        //when
-        configurator.configureModuleForViewInput()
 
         //then
         XCTAssertNotNil(viewController.output, "CharactersViewController is nil after configuration")

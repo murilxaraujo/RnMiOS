@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import RnM
+import RnMService
 
 class CharactersPresenterTest: XCTestCase {
 
@@ -22,7 +23,9 @@ class CharactersPresenterTest: XCTestCase {
     }
 
     class MockInteractor: CharactersInteractorInput {
-
+        func getCharacters(at page: Int, completion: @escaping (Result<[RnMCharacter], Error>) -> Void) {
+            
+        }
     }
 
     class MockRouter: CharactersRouterInput {
@@ -30,7 +33,9 @@ class CharactersPresenterTest: XCTestCase {
     }
 
     class MockViewController: CharactersViewInput {
-
+        func append(characters: [RnMCharacter]) {
+            
+        }
         func setupInitialState() {
 
         }

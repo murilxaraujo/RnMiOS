@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import RnM
+import RnMService
 
 class CharacterModuleConfiguratorTests: XCTestCase {
 
@@ -25,10 +26,10 @@ class CharacterModuleConfiguratorTests: XCTestCase {
 
         //given
         let viewController = CharacterViewControllerMock()
-        let configurator = CharacterModuleConfigurator()
+        _ = CharacterModuleConfigurator()
 
         //when
-        configurator.configureModule()
+        //configurator.configureModule(with: RnMCharacter())
 
         //then
         XCTAssertNotNil(viewController.output, "CharacterViewController is nil after configuration")
@@ -47,7 +48,7 @@ class CharacterModuleConfiguratorTests: XCTestCase {
 
         var setupInitialStateDidCall = false
 
-        override func setupInitialState() {
+        func setupInitialState() {
             setupInitialStateDidCall = true
         }
     }

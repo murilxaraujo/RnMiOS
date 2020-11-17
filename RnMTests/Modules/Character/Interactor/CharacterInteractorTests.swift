@@ -22,6 +22,7 @@ class CharacterInteractorTests: XCTestCase {
     }
 
     class MockPresenter: CharacterInteractorOutput {
-
+        func setView(sections: [CharacterSection]) {
+        }
     }
 }

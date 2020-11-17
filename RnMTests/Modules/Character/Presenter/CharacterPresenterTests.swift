@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import RnM
+import RnMService
 
 class CharacterPresenterTest: XCTestCase {
 
@@ -22,7 +23,9 @@ class CharacterPresenterTest: XCTestCase {
     }
 
     class MockInteractor: CharacterInteractorInput {
-
+        func getSections(from character: RnMCharacter) {
+            
+        }
     }
 
     class MockRouter: CharacterRouterInput {
@@ -30,6 +33,14 @@ class CharacterPresenterTest: XCTestCase {
     }
 
     class MockViewController: CharacterViewInput {
+        func setupInitialState(with character: RnMCharacter) {
+            
+        }
+        
+        func populateTableView(with sections: [CharacterSection]) {
+            
+        }
+        
 
         func setupInitialState() {
 
