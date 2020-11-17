@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RnMService
 
 protocol CharactersInteractorInput {
-
+    func getCharacters(at page: Int, completion: @escaping (Result<[RnMCharacter], Error>)->Void)
 }

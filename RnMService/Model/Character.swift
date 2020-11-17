@@ -8,16 +8,16 @@
 import Foundation
 
 public struct RnMCharacter: Codable, Hashable {
-    let name: String
-    let status: String
-    let species: String
-    let type: String
-    let gender: String
-    let image: String
-    let episode: [String]
-    let url: String
-    let created: String
-    let location: RnMLocationReference
-    let origin: RnMLocationReference
+    public let name: String
+    public let status: String
+    public let species: String
+    public let type: String
+    public let gender: String
+    public let image: String
+    public let episode: [String]
+    public let url: String
+    public let created: String
+    public let location: RnMLocationReference
+    public let origin: RnMLocationReference
 }
 

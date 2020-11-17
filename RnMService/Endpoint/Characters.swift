@@ -31,11 +31,15 @@ public struct RnMCharacters {
             
             guard let responseData = data,
                   let result = try? JSONDecoder().decode(APIResult<[RnMCharacter]>.self, from: responseData) else  {
-                completion(.failure(RnMCharactersErrors.couldNotGetResult))
+                DispatchQueue.main.async {
+                    completion(.failure(RnMCharactersErrors.couldNotGetResult))
+                }
                 return
             }
             
-            completion(.success(result.results))
+            DispatchQueue.main.async {
+                completion(.success(result.results))
+            }
         }.resume()
     }
     

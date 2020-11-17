@@ -8,18 +8,21 @@
 import UIKit
 
 class CharactersView: UIView {
-    let collectionView = UICollectionView()
+    let tableView = UITableView()
     
-    init() {
+    override init(frame: CGRect) {
         super.init(frame: .zero)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        let collectionViewConstraints = [
-            collectionView.topAnchor.constraint(equalTo: topAnchor),
-            collectionView.leftAnchor.constraint(equalTo: leftAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            collectionView.rightAnchor.constraint(equalTo: rightAnchor)
+        backgroundColor = .systemBackground
+        autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(tableView)
+        let tableViewConstraints = [
+            tableView.topAnchor.constraint(equalTo: topAnchor),
+            tableView.leftAnchor.constraint(equalTo: leftAnchor),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            tableView.rightAnchor.constraint(equalTo: rightAnchor)
         ]
-        NSLayoutConstraint.activate(collectionViewConstraints)
+        NSLayoutConstraint.activate(tableViewConstraints)
     }
     
     required init?(coder: NSCoder) {
