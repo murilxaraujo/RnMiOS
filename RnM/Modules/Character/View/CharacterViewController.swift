@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RnMService
 
 class CharacterViewController: UIViewController, CharacterViewInput {
 
@@ -20,6 +21,7 @@ class CharacterViewController: UIViewController, CharacterViewInput {
 
 
     // MARK: CharacterViewInput
-    func setupInitialState() {
+    func setupInitialState(with character: RnMCharacter) {
+        title = character.name
     }
 }

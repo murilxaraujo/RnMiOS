@@ -40,6 +40,7 @@
 		4B78ECE7255CA9B000DC6F49 /* RnMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78ECE6255CA9B000DC6F49 /* RnMUITests.swift */; };
 		4B8000562563601A0000F4CB /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8000552563601A0000F4CB /* LoadingTableViewCell.swift */; };
 		4B80005C2563618A0000F4CB /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B80005B2563618A0000F4CB /* CharacterTableViewCell.swift */; };
+		4B8000622563679A0000F4CB /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8000612563679A0000F4CB /* UIImageView+.swift */; };
 		5E3A92792DF9565B3C904139 /* CharacterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD75804079C58A6504FA7 /* CharacterViewTests.swift */; };
 		6275B9BF95CE807D50BB8D2F /* CharacterRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C2A6C41AE1D4A2A2C05B4 /* CharacterRouterInput.swift */; };
 		627AD7A257DBB615296241F7 /* CharactersRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD82CB354F7DAAF5A9EF02CE /* CharactersRouterInput.swift */; };
@@ -163,6 +164,7 @@
 		4B78ECE8255CA9B000DC6F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8000552563601A0000F4CB /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		4B80005B2563618A0000F4CB /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		4B8000612563679A0000F4CB /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		4E2973A7EAE318F23446DDAB /* CharactersInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharactersInteractorInput.swift; sourceTree = "<group>"; };
 		4E3C2A6C41AE1D4A2A2C05B4 /* CharacterRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterRouterInput.swift; sourceTree = "<group>"; };
 		5475979A2D9FA7A290286445 /* CharacterInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterInteractor.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				4B52954A2561B04C00AC0D23 /* UIViewController+.swift */,
 				4B5295522561B06600AC0D23 /* String+.swift */,
+				4B8000612563679A0000F4CB /* UIImageView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -842,6 +845,7 @@
 				827E72DD476B4FAF4C3F8480 /* CharactersViewOutput.swift in Sources */,
 				13117D294424F1646B1F0E77 /* CharactersViewController.swift in Sources */,
 				AF389A33B870FD08F0D1E7D8 /* CharactersModuleInput.swift in Sources */,
+				4B8000622563679A0000F4CB /* UIImageView+.swift in Sources */,
 				879836D6710E53E7B6A52C8E /* CharactersPresenter.swift in Sources */,
 				D07ED2E42731D7851E06C5B1 /* CharactersInteractorInput.swift in Sources */,
 				FF9854397C7E96C6DA7747AA /* CharactersInteractorOutput.swift in Sources */,

@@ -20,7 +20,7 @@ class CharactersPresenter: CharactersModuleInput, CharactersViewOutput, Characte
     }
     
     func hasSelected(character: RnMCharacter) {
-        let detailedView = CharacterModuleConfigurator().configureModule()
+        let detailedView = CharacterModuleConfigurator().configureModule(with: character)
         Router.push(detailedView)
     }
     
