@@ -27,6 +27,14 @@ class CharacterPresenter: CharacterModuleInput, CharacterViewOutput, CharacterIn
     }
     
     func hasMarkedCharacterAsFavorite() {
-        
+        guard let id = character?.id else {return}
+        if FavoritesService.shared.hasFavCharacter(for: id) {
+            FavoritesService.shared.removeFav(for: id)
+            view.setFavButton(to: false)
+        } else {
+            FavoritesService.shared.favCharacter(for: id)
+            view.setFavButton(to: true)
+        }
+        FavoritesService.shared.saveFavoritedCharacters()
     }
 }

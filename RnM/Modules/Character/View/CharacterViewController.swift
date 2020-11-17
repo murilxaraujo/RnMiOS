@@ -14,6 +14,9 @@ class CharacterViewController: UIViewController, CharacterViewInput {
     var output: CharacterViewOutput!
     private var character: RnMCharacter?
     private var sections: [CharacterSection] = []
+    private lazy var favButton: UIBarButtonItem = {
+        return UIBarButtonItem(image: UIImage(systemName: "heart"), style: .plain, target: self, action: #selector(favButtonTapped))
+    }()
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,7 @@ class CharacterViewController: UIViewController, CharacterViewInput {
         characterView.tableView.dataSource = self
         characterView.tableView.register(CharacterBasicInfoTableViewCell.self, forCellReuseIdentifier: CharacterBasicInfoTableViewCell.cellID)
         characterView.tableView.register(CharacterDetailsTableViewCell.self, forCellReuseIdentifier: CharacterDetailsTableViewCell.cellID)
+        setupFavButton()
         output.viewIsReady()
     }
 
@@ -28,12 +32,31 @@ class CharacterViewController: UIViewController, CharacterViewInput {
     func setupInitialState(with character: RnMCharacter) {
         title = character.name
         self.character = character
+        if FavoritesService.shared.hasFavCharacter(for: character.id) {
+            favButton.image = UIImage(systemName: "heart.fill")
+        }
         characterView.tableView.reloadData()
     }
     
     func populateTableView(with sections: [CharacterSection]) {
         self.sections = sections
         characterView.tableView.reloadData()
+    }
+    
+    private func setupFavButton() {
+        navigationItem.rightBarButtonItem = favButton
+    }
+    
+    @objc private func favButtonTapped() {
+        output.hasMarkedCharacterAsFavorite()
+    }
+    
+    func setFavButton(to favorited: Bool) {
+        if favorited {
+            favButton.image = UIImage(systemName: "heart.fill")
+        } else {
+            favButton.image = UIImage(systemName: "heart")
+        }
     }
 }
 

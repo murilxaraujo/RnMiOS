@@ -41,6 +41,11 @@ class CharactersViewController: UIViewController, CharactersViewInput {
         isWaitingForData = false
         charactersView.tableView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        charactersView.tableView.reloadData()
+    }
 }
 
 extension CharactersViewController: UITableViewDelegate {

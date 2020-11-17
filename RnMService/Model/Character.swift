@@ -8,6 +8,7 @@
 import Foundation
 
 public struct RnMCharacter: Codable, Hashable {
+    public let id: Int
     public let name: String
     public let status: String
     public let species: String

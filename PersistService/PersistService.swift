@@ -8,6 +8,11 @@
 import Foundation
 
 public class PersistService {
+    
+    public init() {
+        
+    }
+    
     public func save(_ data: Data, for key: String) {
         guard let filePath = self.append(toPath: self.documentDirectory(),
                                          withPathComponent: key+".txt") else {

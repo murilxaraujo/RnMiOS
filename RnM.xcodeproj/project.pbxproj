@@ -44,6 +44,7 @@
 		4B7EDCC6256422EE00007C4C /* PersistService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7EDCB1256422EE00007C4C /* PersistService.framework */; };
 		4B7EDCC7256422EE00007C4C /* PersistService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7EDCB1256422EE00007C4C /* PersistService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B7EDCD52564230000007C4C /* PersistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7EDCD42564230000007C4C /* PersistService.swift */; };
+		4B7EDCDD25642EDA00007C4C /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7EDCDC25642EDA00007C4C /* FavoritesService.swift */; };
 		4B8000562563601A0000F4CB /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8000552563601A0000F4CB /* LoadingTableViewCell.swift */; };
 		4B80005C2563618A0000F4CB /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B80005B2563618A0000F4CB /* CharacterTableViewCell.swift */; };
 		4B8000622563679A0000F4CB /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8000612563679A0000F4CB /* UIImageView+.swift */; };
@@ -201,6 +202,7 @@
 		4B7EDCC0256422EE00007C4C /* PersistServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistServiceTests.swift; sourceTree = "<group>"; };
 		4B7EDCC2256422EE00007C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B7EDCD42564230000007C4C /* PersistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistService.swift; sourceTree = "<group>"; };
+		4B7EDCDC25642EDA00007C4C /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
 		4B8000552563601A0000F4CB /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		4B80005B2563618A0000F4CB /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		4B8000612563679A0000F4CB /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
@@ -367,11 +369,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4B52955D2561B15E00AC0D23 /* Wrappers */ = {
+		4B52955D2561B15E00AC0D23 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4B7EDCDC25642EDA00007C4C /* FavoritesService.swift */,
 			);
-			path = Wrappers;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4B5295E42562078D00AC0D23 /* RnMService */ = {
@@ -458,7 +461,7 @@
 			isa = PBXGroup;
 			children = (
 				4B234C812562287E004035FF /* Router */,
-				4B52955D2561B15E00AC0D23 /* Wrappers */,
+				4B52955D2561B15E00AC0D23 /* Services */,
 				4B5295492561AF5400AC0D23 /* Extensions */,
 				4B52952C2561AD7D00AC0D23 /* Modules */,
 				4B78ECC4255CA9AE00DC6F49 /* AppDelegate.swift */,
@@ -1026,6 +1029,7 @@
 				C3D551D5251C796D2D153C6B /* CharacterModuleInput.swift in Sources */,
 				CBEF8F9A01C170B17E3FC89D /* CharacterPresenter.swift in Sources */,
 				4B800068256372FA0000F4CB /* CharacterView.swift in Sources */,
+				4B7EDCDD25642EDA00007C4C /* FavoritesService.swift in Sources */,
 				4B234C8325622891004035FF /* Router.swift in Sources */,
 				A89A15808CD5B97B756AE678 /* CharacterInteractorInput.swift in Sources */,
 				3F2CDC58449D922A7249AE1F /* CharacterInteractorOutput.swift in Sources */,

@@ -17,4 +17,6 @@ protocol CharacterViewInput: class {
     func setupInitialState(with character: RnMCharacter)
     
     func populateTableView(with sections: [CharacterSection])
+    
+    func setFavButton(to favorited: Bool)
 }
