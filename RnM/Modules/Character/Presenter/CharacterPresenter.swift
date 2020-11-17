@@ -19,4 +19,12 @@ class CharacterPresenter: CharacterModuleInput, CharacterViewOutput, CharacterIn
             view.setupInitialState(with: character)
         }
     }
+    
+    func setView(sections: [CharacterSection]) {
+        
+    }
+    
+    func hasMarkedCharacterAsFavorite() {
+        
+    }
 }

@@ -8,6 +8,6 @@
 import Foundation
 
 public struct RnMLocationReference: Codable, Hashable {
-    let name: String?
-    let url: String
+    public let name: String?
+    public let url: String
 }

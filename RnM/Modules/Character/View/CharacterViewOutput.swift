@@ -14,4 +14,6 @@ protocol CharacterViewOutput {
     */
 
     func viewIsReady()
+    
+    func hasMarkedCharacterAsFavorite()
 }

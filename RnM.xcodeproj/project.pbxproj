@@ -41,6 +41,10 @@
 		4B8000562563601A0000F4CB /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8000552563601A0000F4CB /* LoadingTableViewCell.swift */; };
 		4B80005C2563618A0000F4CB /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B80005B2563618A0000F4CB /* CharacterTableViewCell.swift */; };
 		4B8000622563679A0000F4CB /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8000612563679A0000F4CB /* UIImageView+.swift */; };
+		4B800068256372FA0000F4CB /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B800067256372FA0000F4CB /* CharacterView.swift */; };
+		4B80006F256375510000F4CB /* CharacterTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B80006E256375510000F4CB /* CharacterTableViewSection.swift */; };
+		4B80007925637BF10000F4CB /* CharacterBasicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B80007825637BF10000F4CB /* CharacterBasicInfoTableViewCell.swift */; };
+		4B80007F25637C030000F4CB /* CharacterDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B80007E25637C030000F4CB /* CharacterDetailsTableViewCell.swift */; };
 		5E3A92792DF9565B3C904139 /* CharacterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDD75804079C58A6504FA7 /* CharacterViewTests.swift */; };
 		6275B9BF95CE807D50BB8D2F /* CharacterRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C2A6C41AE1D4A2A2C05B4 /* CharacterRouterInput.swift */; };
 		627AD7A257DBB615296241F7 /* CharactersRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD82CB354F7DAAF5A9EF02CE /* CharactersRouterInput.swift */; };
@@ -165,6 +169,10 @@
 		4B8000552563601A0000F4CB /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		4B80005B2563618A0000F4CB /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		4B8000612563679A0000F4CB /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		4B800067256372FA0000F4CB /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		4B80006E256375510000F4CB /* CharacterTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewSection.swift; sourceTree = "<group>"; };
+		4B80007825637BF10000F4CB /* CharacterBasicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBasicInfoTableViewCell.swift; sourceTree = "<group>"; };
+		4B80007E25637C030000F4CB /* CharacterDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		4E2973A7EAE318F23446DDAB /* CharactersInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharactersInteractorInput.swift; sourceTree = "<group>"; };
 		4E3C2A6C41AE1D4A2A2C05B4 /* CharacterRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterRouterInput.swift; sourceTree = "<group>"; };
 		5475979A2D9FA7A290286445 /* CharacterInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterInteractor.swift; sourceTree = "<group>"; };
@@ -426,6 +434,14 @@
 			path = RnMUITests;
 			sourceTree = "<group>";
 		};
+		4B80006D256375370000F4CB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4B80006E256375510000F4CB /* CharacterTableViewSection.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		4BF261C3B521C58B3C35DF4D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +575,9 @@
 				48B67D5C689434156F29391E /* CharacterViewInput.swift */,
 				CDE340B4A8177E2E168C749A /* CharacterViewOutput.swift */,
 				D290C6F22F89CC0A5B01A1A8 /* CharacterViewController.swift */,
+				4B800067256372FA0000F4CB /* CharacterView.swift */,
+				4B80007825637BF10000F4CB /* CharacterBasicInfoTableViewCell.swift */,
+				4B80007E25637C030000F4CB /* CharacterDetailsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,6 +593,7 @@
 		E7F3AFE6D8046A46E6779723 /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				4B80006D256375370000F4CB /* Entity */,
 				D1F82961B544B9ED7D3E9EF1 /* View */,
 				ECC28B2B61E0C0EDF8A8669E /* Presenter */,
 				4BF261C3B521C58B3C35DF4D /* Interactor */,
@@ -839,6 +859,7 @@
 			files = (
 				4B78ECC5255CA9AE00DC6F49 /* AppDelegate.swift in Sources */,
 				4B5295532561B06600AC0D23 /* String+.swift in Sources */,
+				4B80006F256375510000F4CB /* CharacterTableViewSection.swift in Sources */,
 				4B52954B2561B04C00AC0D23 /* UIViewController+.swift in Sources */,
 				4B78ECC7255CA9AE00DC6F49 /* SceneDelegate.swift in Sources */,
 				DEA3FCAE2F4BED924C5E98F1 /* CharactersViewInput.swift in Sources */,
@@ -854,11 +875,13 @@
 				D9EBAE91D7A247737DCC509E /* CharactersRouter.swift in Sources */,
 				F86FC6D94D272198B847B623 /* CharactersConfigurator.swift in Sources */,
 				1D614CEC3B9E9B0F2B6070DF /* CharacterViewInput.swift in Sources */,
+				4B80007925637BF10000F4CB /* CharacterBasicInfoTableViewCell.swift in Sources */,
 				691D1D5798050CCE9C739053 /* CharacterViewOutput.swift in Sources */,
 				4B80005C2563618A0000F4CB /* CharacterTableViewCell.swift in Sources */,
 				CF5576738D323914471F43D6 /* CharacterViewController.swift in Sources */,
 				C3D551D5251C796D2D153C6B /* CharacterModuleInput.swift in Sources */,
 				CBEF8F9A01C170B17E3FC89D /* CharacterPresenter.swift in Sources */,
+				4B800068256372FA0000F4CB /* CharacterView.swift in Sources */,
 				4B234C8325622891004035FF /* Router.swift in Sources */,
 				A89A15808CD5B97B756AE678 /* CharacterInteractorInput.swift in Sources */,
 				3F2CDC58449D922A7249AE1F /* CharacterInteractorOutput.swift in Sources */,
@@ -867,6 +890,7 @@
 				6275B9BF95CE807D50BB8D2F /* CharacterRouterInput.swift in Sources */,
 				C100D5E07BD932852EFECB4E /* CharacterRouter.swift in Sources */,
 				4B234C7B25622391004035FF /* CharactersView.swift in Sources */,
+				4B80007F25637C030000F4CB /* CharacterDetailsTableViewCell.swift in Sources */,
 				C590A64DB7586B61546B0865 /* CharacterConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

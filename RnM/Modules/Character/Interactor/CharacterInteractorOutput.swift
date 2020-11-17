@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CharacterInteractorOutput: class {
-
+    func setView(sections: [CharacterSection])
 }

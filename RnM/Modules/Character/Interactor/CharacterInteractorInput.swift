@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import RnMService
 
 protocol CharacterInteractorInput {
-
+    func getSections(from character: RnMCharacter)
 }
