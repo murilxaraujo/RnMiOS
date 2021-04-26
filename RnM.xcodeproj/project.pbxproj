@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0099BA9928C44D84C7A73122B2DC9DFD /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9BD81A37DCDFDE83A369879E53C68D /* Data+.swift */; };
 		0436722C14BD081B46AD8240289B51C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B039A67159C2ED07D49A5A4AB1FD2C /* SceneDelegate.swift */; };
 		0E3C86EF1F13D34FF1573072763CB78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DCE6197244E3912EA917201ABFCF29 /* Assets.xcassets */; };
 		0F668FA357EAF3E90CC6F0531FD37A34 /* PersistService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AB79EEE0B009C3DFB33EFDAE7E80BA /* PersistService.framework */; };
@@ -28,7 +29,6 @@
 		395EE5BC9D031B4B6C68B7C036A4B008 /* RnMService.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AFDD4001AD5A8064D9F0F3B14EB573 /* RnMService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4233B37507491C364D0BE714B2F39943 /* CharacterInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B593A2C1F1BD2C3350171BBE406A9D6 /* CharacterInteractorTests.swift */; };
 		441A3526D5A3BA03F24621264EE35986 /* CharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BFD044210B076300C3D983EC74422D /* CharacterRouter.swift */; };
-		4B1D8C982637282500A5093A /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D8C972637282500A5093A /* Data+.swift */; };
 		4B42C92BF0AD7003E5E34AC8E3FE11AF /* RnMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13371A364A3C51B6E81792F47065F65 /* RnMEpisode.swift */; };
 		5919C8DA5AB61E5C64A434A67E52FD1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF28A8BD230D7AF051CA0B3236F21F6 /* LaunchScreen.storyboard */; };
 		5A83EB8AE0F99DD130B2547DF226088F /* CharacterRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A31A030D9FAD1C2248B3ABF0D503DA /* CharacterRouterInput.swift */; };
@@ -173,7 +173,6 @@
 		41171576386B3BFD1D9CF311CED12F2D /* CharacterViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterViewOutput.swift; sourceTree = "<group>"; };
 		469E051F639F4D89B805502AF1B8D35E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C683841FC3E9C84017A17D07D09D0A /* CharactersViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharactersViewTests.swift; sourceTree = "<group>"; };
-		4B1D8C972637282500A5093A /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
 		4C8F86B9819EB2AD1094EDE8687A12CE /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		4F2C00091BF0C4CB9E018BAFB8D6DD80 /* CharactersConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharactersConfigurator.swift; sourceTree = "<group>"; };
 		5432C173B2DE98D2EEBFB98CDB939037 /* CharacterDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,6 +192,7 @@
 		6F3FBFDDB8BE28024BB998EF80319BC9 /* CharactersRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharactersRouterInput.swift; sourceTree = "<group>"; };
 		71F0282101D1F8BBEE625C5FAF950B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74AB79EEE0B009C3DFB33EFDAE7E80BA /* PersistService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9BD81A37DCDFDE83A369879E53C68D /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
 		7E6A5C080CB8BFA62AD969F9FC3B1283 /* CharacterBasicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBasicInfoTableViewCell.swift; sourceTree = "<group>"; };
 		83A4F27270B9B2AEDA6FDD666240A96E /* CharactersRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharactersRouter.swift; sourceTree = "<group>"; };
 		84A31A030D9FAD1C2248B3ABF0D503DA /* CharacterRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CharacterRouterInput.swift; sourceTree = "<group>"; };
@@ -612,10 +612,10 @@
 		D89F667C567993CBA8F8A29355DD106B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7D9BD81A37DCDFDE83A369879E53C68D /* Data+.swift */,
 				0A968E49444366E399AE31F70555421D /* String+.swift */,
 				8500BD2C9B68F751CADFC19AA21B3941 /* UIImageView+.swift */,
 				E85E188F41000FD8DF3811832185419D /* UIViewController+.swift */,
-				4B1D8C972637282500A5093A /* Data+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1008,10 +1008,10 @@
 				1E801F2527F620C0B812A23519381DD6 /* CharactersRouter.swift in Sources */,
 				8B8E703B8DEA70706469A85B037F496F /* CharactersRouterInput.swift in Sources */,
 				1FD98DA81F39DADC5D6A6F609B886612 /* CharactersView.swift in Sources */,
-				4B1D8C982637282500A5093A /* Data+.swift in Sources */,
 				9438DEE81501FC5651B0DCB95EEBB85B /* CharactersViewController.swift in Sources */,
 				7CFE1F3B56C6011FAAB6B733DC5D9B05 /* CharactersViewInput.swift in Sources */,
 				BA657194823158771A8920F1C7A7E317 /* CharactersViewOutput.swift in Sources */,
+				0099BA9928C44D84C7A73122B2DC9DFD /* Data+.swift in Sources */,
 				743C388BA352E00EF59781D9B6F0ED11 /* FavoritesService.swift in Sources */,
 				D6343F8AD6DBA648B21E6FD3F61CA6CF /* LoadingTableViewCell.swift in Sources */,
 				D47759AB42E0191EAE8F8423F5CCFCA0 /* Router.swift in Sources */,
